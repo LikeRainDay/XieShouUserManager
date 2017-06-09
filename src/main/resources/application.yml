@@ -1,0 +1,18 @@
+# 环境开关
+spring:
+  profiles:
+    active: env
+security:
+  oauth2:
+    client:
+      client-secret: 33b17e044ee6a4fa383f46ec6e28ea1d
+      client-id: 233668646673605
+      access-token-uri: https://graph.facebook.com/oauth/access_token
+      token-name: oauth_token
+      authentication-scheme: query
+      client-authentication-scheme: form
+    resource:
+      user-info-uri:  https://graph.facebook.com/me
+
+
+#  单点登录授权管理

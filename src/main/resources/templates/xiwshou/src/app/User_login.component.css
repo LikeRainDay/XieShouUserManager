@@ -1,0 +1,22 @@
+/*相对于组件模板内部的元素*/
+:host {
+  display: block;
+  border:1px solid black;
+}
+
+
+:host(.active){
+  border-width: 3px;
+}
+
+
+/*基于某些来自组件视图外部的条件应用样式是很有用的*/
+:host-context(.theme-light) h2{
+  background-color: #eef;
+}
+
+/*组件样式通常只会作用于组件自身的 HTML 上。*/
+/*/deep/选择器还有一个别名>>>*/
+:host /deep/ h3{
+  font-style: italic;
+}
